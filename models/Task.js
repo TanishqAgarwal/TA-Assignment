@@ -14,7 +14,7 @@ const TaskSchema = new Schema(
         
         periodType: {type:String, required:true},
 
-        taskListID: {type:Schema.Types.ObjectId, ref: "TaskList"},
+        taskListID: {type:Schema.Types.ObjectId, ref: "task-list",required:true},
     },
     { timestamps:true}
 );
